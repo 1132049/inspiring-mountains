@@ -1,0 +1,730 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+section {
+  height: 100vh;
+  width: auto;
+}
+.content-wrapper {
+ width: 80%;
+ margin: 0 auto;
+}
+
+/* nav */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 2vw 0  0 2vw;
+  font-size: 2vw;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: white;
+  padding: 1vw 0  1vw 2vw;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+a:hover{
+ opacity: .8;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:transparent;
+  cursor: pointer;
+}
+.icons {
+  font-size: 2vw;
+  color: white;
+  padding-top: 1%;
+  position: absolute;
+  z-index: 1;
+}
+/* first page */
+#index-content {
+  padding-top: 35vh;
+  margin: 0 auto;
+}
+section > #index-content >  a > button {
+  display:block;
+  width: 10vw;
+  border: 1px solid white;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  padding: 0.8% 2%;
+  margin: 4% auto;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1vw;
+}
+section > #index-content >  a > button:hover {
+  box-shadow: none;
+  background-color: white;
+  color: rgba(0,0,0,.7);
+  cursor: pointer;
+}
+h1, h3, h2 {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+h1, h3 {
+  letter-spacing: 0.75vw;
+  font-size: 3vw;
+}
+h2 {
+  letter-spacing: 0.2vw;
+  font-size: 2vw;
+  margin-top: 6vh;
+}
+#rosa{
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 35vh;
+  margin: 0;
+}
+/* Continents */
+.continents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  flex: 32%;
+  height: 50vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.flex-container {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ /* Europe, Asia, S. America, N. America, Africa, Australia */
+
+.left {
+  height: 100vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+ }
+ .right {
+ height: 100vh;
+ width: 50%;
+ background-color: white;
+}
+table {
+ margin: 15% auto 15% auto;
+ width: 80%;
+ }
+.mountains table {
+ margin: 0 auto;
+ }
+ td {
+ color: white;
+ padding-bottom: 3%;
+}
+td:nth-child(2){
+ text-align: center;
+}
+td:last-child {
+  text-align: right;
+}
+tr:first-child{
+  font-weight: bold;
+}
+h3 {
+  padding-top: 35vh;
+}
+.name {
+  text-transform: uppercase;
+  font-size: 1vw;
+ }
+.name:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+button {
+  margin:  1% auto;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 0.8% 2%;
+  color: white;
+  text-transform: uppercase;
+  display:block;
+  font-size: 1vw;
+}
+button:hover {
+  background-color: red;
+}
+
+/* mountain */
+.elements {
+  flex-wrap: wrap;
+  display:flex;
+  flex-direction: row;
+  color: white;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn-info {
+  border: 1px solid white;
+  background-color: transparent;
+  width: auto;
+  color: white;
+  text-transform: uppercase;
+  display:block;
+  font-size: 1vw;
+}
+.info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  width: auto;
+  color: white;
+}
+.info {
+  padding: 1vh;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+.el-flex {
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+/* generator */
+#gen {
+  padding-top: 10vh;
+}
+.select-box {
+  padding-top: 25vh;
+}
+select {
+  display: block;
+  background: transparent;
+  width: 20vw;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  font-size: 1.3vw;
+  margin: 10% auto;
+  padding-bottom: 1%;
+}
+option, option:focus {
+  background: #28352e;
+  outline: none;
+}
+
+#sendbtn, #btn-discover, #gen> button {
+  margin:  1% auto;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 0.8% 2%;
+  color: white;
+  text-transform: uppercase;
+  display:block;
+  font-size: 1vw;
+}
+.btn-info a:hover, .btn-info:hover, #sendbtn:hover, #btn-discover:hover, #gen> button:hover {
+  box-shadow: none;
+  background-color: white;
+  color: rgba(0,0,0,.7);
+  cursor: pointer;
+}
+
+/* contacts */
+#con {
+  margin: 0 auto;
+  padding-top: 25vh;
+}
+.error-wrapper {
+  margin-top: 2vh;
+	text-align: center;
+	color: white;
+}
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: transparent;
+  margin: 3% 0 0 25%;
+  width: 54%;
+  padding: 0 0 1% 2%;
+
+}
+input[type=submit] {
+  margin-top: 2%;
+}
+textarea:focus, input:focus {
+  outline: none;
+}
+input::placeholder, textarea::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+#message {
+  height: 15vh;
+  width: 50%;
+  margin: 6% 0 0 25%;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 2%;
+  resize: none;
+  color: white;
+}
+#sendbtn {
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 0.8% 2%;
+  color: white;
+  text-transform: uppercase;
+  display:block;
+  margin: 0 auto;
+}
+
+/* Backgrounds */
+ .mnt {
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  background-repeat: no-repeat;
+}
+#generator-pic {
+  background-image: url('img/europe-2.jpg');
+  background-position: center;
+}
+#generator {
+  background-image: url('img/generator.jpg');
+  background-position: center;
+}
+#monte-rosa {
+  background-image: url('img/monte-rosa.jpg');
+}
+#contacts-2 {
+  background-image: url('img/contacts-mnt.jpg');
+}
+#contacts {
+  background-image: url('img/contacts-mnt-1.jpg');
+  background-position: center;
+}
+#first {
+  background-image: url('img/1.jpg');
+}
+#europe {
+  background-image: url('img/europe.jpg');
+}
+#europe-2{
+  background-image: url('img/europe-3.jpg');
+}
+#europe-4{
+  background-image: url('img/europe-4.jpg');
+  background-position: left;
+}
+#asia {
+  background-image: url('img/asia.jpg');
+  background-position: center;
+}
+#asia-2 {
+  background-image: url('img/asia-2.jpg');
+}
+#asia-3 {
+  background-image: url('img/asia-3.jpg');
+}
+#north-america{
+  background-image: url('img/north-america.jpg');
+}
+#north-america-2 {
+  background-image: url('img/north-america-2.jpg');
+}
+#north-america-3 {
+  background-image: url('img/north-america-3.jpg');
+}
+#south-america{
+  background-image: url('img/south-america.jpg');
+}
+#south-america-2 {
+  background-image: url('img/south-america-2.jpg');
+}
+#south-america-3 {
+  background-image: url('img/south-america-3.jpg');
+}
+#africa{
+  background-image: url('img/africa.jpg');
+}
+#africa-2 {
+  background-image: url('img/africa-2.jpg');
+}
+#africa-3 {
+  background-image: url('img/africa-3.jpg');
+  background-position: right;
+}
+#australia{
+  background-image: url('img/australia.jpg');
+}
+#australia-2 {
+  background-image: url('img/australia-2.jpg');
+}
+#australia-3 {
+  background-image: url('img/australia-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#monte-rosa {
+  background-image: url('img/monte-rosa.jpg');
+}
+#mount-stanley{
+  background-image: url('img/mount-stanley.jpg');
+}
+#mount-bartle-frere {
+  background-image: url('img/mount-bartle-frere.jpg');
+}
+#annapurna {
+  background-image: url('img/annapurna.jpg');
+}
+#mount-elbrus {
+  background-image: url('img/mount-elbrus.jpg');
+}
+#monte-shkhara {
+  background-image: url('img/monte-shkhara.jpg');
+}
+#mount-blanc {
+  background-image: url('img/mount-blanc.jpg');
+}
+#mount-bazar-dyuzi {
+  background-image: url('img/mount-bazar-dyuzi.jpg');
+}
+#mount-everest {
+  background-image: url('img/everest.jpg');
+}
+#mount-khuiten {
+  background-image: url('img/mount-khuiten.jpg');
+}
+#mount-kinabalu {
+  background-image: url('img/mount-kinabalu.jpg');
+}
+#mount-rinjani {
+  background-image: url('img/mount-rinjani.jpg');
+}
+#mount-aconcagua {
+  background-image: url('img/mount-aconcagua.jpg');
+}
+#mount-ojos-del-salado {
+  background-image: url('img/mount-ojos-del-salado.jpg');
+}
+#Mount-Pissis {
+  background-image: url('img/Mount-Pissis.jpg');
+}
+#Mount-Bonete {
+  background-image: url('img/Mount-Bonete.jpg');
+}
+#Tres-Cruces-Sur {
+  background-image: url('img/Tres-Cruces-Sur.jpg');
+}
+#mount-kilimanjaro {
+  background-image: url('img/mount-kilimanjaro.jpg');
+}
+#mount-kenya {
+  background-image: url('img/mount-kenya.jpg');
+}
+#Semien-mountains {
+  background-image: url('img/Semien-mountains.jpg');
+}
+#mount-elgon {
+  background-image: url('img/mount-elgon.jpg');
+}
+#mount-denali {
+  background-image: url('img/mount-denali-2.jpg');
+}
+#mount-logan {
+  background-image: url('img/mount-logan.jpg');
+}
+#el-pico-de-orizaba {
+  background-image: url('img/el-pico-de-orizaba.jpg');
+}
+#mount-saint-elias {
+  background-image: url('img/saint-elias.jpg');
+}
+#popocatepetl {
+  background-image: url('img/popocatepetl.jpg');
+}
+#mount-kosciuszko {
+  background-image: url('img/mount-kosciuszko.jpg');
+}
+#mount-bogong {
+  background-image: url('img/mount-bogong.jpg');
+}
+#mount-buller {
+  background-image: url('img/mount-buller.jpg');
+}
+#mount-buffalo {
+  background-image: url('img/mount-buffalo.jpg');
+}
+#mount-buller {
+  background-image: url('img/mount-buller.jpg');
+}
+@media only screen and (max-width: 600px) {
+.content-wrapper {
+  width: 95vw;
+}
+/* nav */
+.dropbtn {
+  padding: 2vh 0  0 5vw;
+  font-size: 6vw;
+  }
+.dropdown-content a {
+  padding: 1vh 0  1vh 5vw;
+}
+.icons {
+  font-size: 6vw;
+}
+/* first page */
+section > #index-content >  a > button {
+  width: auto;
+  height: auto;
+  padding: 1vh 3vw;
+  margin: 9vh auto;
+  font-size: 6vw;
+}
+h1, h3 {
+  font-size: 8vw;
+}
+/* Continents */
+h2 {
+  font-size: 7vw;
+  padding-top: 4vh;
+}
+.continents {
+  flex-direction: column;
+}
+/* Europe, Asia, S. America, N. America, Africa, Australia */
+.flex-container {
+  flex-direction: column;
+}
+.left {
+  height: 30vh;
+  width: 100vw;
+}
+.right {
+  height: 70vh;
+  width: 100vw;
+}
+h3 {
+  padding-top: 8vh;
+}
+table {
+  width: 95%;
+}
+.name {
+  font-size: 3.5vw;
+}
+  /* mountain */
+
+#rosa{
+  padding-top: 30vh;
+  font-size: 8vw;
+}
+.elements {
+  flex-direction: row;
+  flex-basis: 25%;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  font-size: 4vw;
+}
+.info-box {
+  margin:2vh 2vw;
+}
+.btn-info {
+  font-size: 5vw;
+  margin: 3vh 1vw 0 1vw;
+}
+.el-flex {
+  height: 55vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+  /* generator */
+  #destination > .flex-container > .left > h3 {
+  font-size: 5vw;
+  }
+  .select-box {
+  padding-top: 10vh;
+  }
+  select {
+  width: 60vw;
+  font-size: 4vw;
+}
+  #sendbtn, #btn-discover, #gen> button {
+  padding: 1vh 2vw;
+  font-size: 4vw;
+  }
+  /* contacts */
+  #con {
+  margin: 0 auto;
+  padding-top: 10vh;
+  }
+  .error-wrapper {
+  font-size: 2vw;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.continent-wrapper {
+  width: 90%;
+  }
+  /* nav */
+.dropbtn {
+  font-size: 4vw;
+}
+.icons {
+  font-size: 4vw;
+}
+  /* first page */
+section > #index-content >  a > button {
+  width: auto;
+  height: auto;
+  padding: 1vh 3vw;
+  margin: 9vh auto;
+  font-size: 2vw;
+  }
+h1, h3 {
+  font-size: 5vw;
+}
+  /* Continents */
+h2 {
+  font-size: 3vw;
+}
+.continents {
+  flex-direction: row;
+}
+.box{
+  flex-basis: 50%;
+}
+  /* Europe, Asia, S. America, N. America, Africa, Australia */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  height: 100vh;
+  width: 40vw;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 60vw;
+}
+h3 {
+  padding-top: 35vh;
+}
+table {
+  width: 90%;
+  margin-top: 9vh;
+}
+.name {
+  font-size: 1.5vw;
+}
+/* mountain */
+
+#rosa{
+  padding-top: 35vh;
+  font-size: 6vw;
+  }
+  .elements {
+  flex-direction: row;
+  flex-basis: 25%;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  font-size: 2vw;
+}
+.info-box {
+  margin:2vh 2vw;
+}
+.btn-info {
+  margin: 3vh 1vw 0 1vw;
+}
+.el-flex {
+  height: 55vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* generator */
+.select-box {
+  padding-top: 0;
+}
+#destination > .flex-container > .left > h3 {
+  font-size: 3vw;
+}
+#gen {
+  padding-top: 0;
+}
+select {
+  width: 40vw;
+  font-size: 2vw;
+}
+#sendbtn, #btn-discover, #gen> button {
+  padding: 1vh 2vw;
+  font-size: 1.5vw;
+}
+/* contacts */
+#con {
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+.error-wrapper {
+  font-size: 2vw;
+}
+}
